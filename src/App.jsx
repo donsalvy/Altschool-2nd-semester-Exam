@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import "./index.css";
 import "./App.css";
+
 // import {useState} from "react";
 // import SearchResultList from "./components/SearchResultList";
 // import SearchBox from "./components/SearchBox";

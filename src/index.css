@@ -28,19 +28,33 @@ p {
     align-items: center;
     gap: 10px;
     justify-content: center;
-    background-color: #710e83;
+    background-color: #5c006c;
     text-align: center;
-    padding: 20px;
+    padding: 20px 7% ;
     margin-bottom: 100px;
     font-style: italic;
     color: #f4c828;
   
   }
+
+
+  ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-left: 100px;
+    cursor: pointer;
+  }
+
+  ul li{
+    font-size: 18px;
+  } 
+
 .navbar img{
   width: 10%;
   height: 10%;
   border-radius: 50%;
-  margin-right: 100px;
+  margin-right: 200px;
 }
 .input-wrapper{
   background-color: #fff;
@@ -65,13 +79,43 @@ input:focus{
   outline: none;
 }
 
-#search-icon{
+.search-box{
   color: rgb(6, 39, 136);
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #100f0f;
+    padding: 20px;
+    border-radius: 50px;
 }
 
+.search-box input{
+  padding: 6px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 18px;
+  max-width: 150px;
+}
+.search-box input::placeholder{
+  color: #fff;
+}
 
+.search-box img{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.search-box img:hover{
+  transform: scale(1.1);
+}   
 .github-icon {
     font-size: 3rem;
+    width: 160px;
+    cursor: pointer ;
+    margin-right: 20px;
 }
 
 section {
@@ -96,13 +140,28 @@ section {
 
 .view-more:hover {
     text-decoration: underline;
+    color: #fff;
+    background-color: aqua;
+}
+.view-more:active {
+    background-color: #049f21;
 }
 
 .repo-card,
 .repodetail-card {
-    border: 1px solid #1B9AAA;
+    border: 1px solid #e2eaeb;
     padding: 13px;
     border-radius: 5px;
+}
+.repo-card,
+.repodetail-card:hover {
+    box-shadow: 0 0 10px #e2eaeb;
+  
+}
+
+.repo-card:hover {
+    background-color: #f5f1e3;
+    color: #333;
 }
 
 a {
@@ -115,7 +174,7 @@ a:hover {
 }
 
 .repo-name {
-    color: #049f21;
+    color: #03bc3a;
     font-size: 2rem;
     word-break: break-word;
 }
@@ -168,11 +227,20 @@ a:hover {
     font-size: 5rem;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 478px) {
     .repo-container {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 
+    .navbar{
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        flex-direction: column; 
+        align-items: center; 
+      }
+    }
     h1 {
         font-size: 1.5rem;
     }
@@ -181,4 +249,6 @@ a:hover {
         font-size: 2rem;
     }
 
-}
+    .repo-card {
+        padding: 10px;
+    }
