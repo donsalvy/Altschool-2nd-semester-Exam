@@ -104,9 +104,10 @@ p {
   display: flex;
     justify-content: center;
     align-items: center;
-    background: #100f0f;
-    padding: 20px 50px;
-    border-radius: 50px;
+    background: #bab3b3;
+    padding: 10px 20px;
+    border-radius: 60px;
+    margin-top: 150px;
 }
 
 .search-box input{
@@ -116,7 +117,7 @@ p {
   background-color: transparent;
   color: #fff;
   font-size: 18px;
-  max-width: 150px;
+  max-width: 200px;
 }
 .search-box input::placeholder{
   color: #19a002;
@@ -130,7 +131,7 @@ p {
 
 .search-box button{
   background: #19a002;
-  color: #333;
+  color: #fff;
   border: 0;
   padding: 6px 10px;
   border-radius: 50px;
@@ -146,6 +147,8 @@ p {
   width: 40px;
   height: 40px;
 }
+
+
 
 .search-box img:hover{
   transform: scale(1.1);
@@ -274,6 +277,10 @@ a:hover {
 
     .navbar{
         flex-direction: column;
+    }
+
+    .repo-search{
+        width: 50%;
     }
 
     .navbar ul {
