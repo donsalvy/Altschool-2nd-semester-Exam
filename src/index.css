@@ -282,6 +282,11 @@ a:hover {
     .repo-search{
         width: 50%;
     }
+    .search-box{
+        margin-top: 100px;
+        padding-left: 20px;
+        margin-left: 150px;
+    }
 
     .navbar ul {
         flex-direction: column; 
